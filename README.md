@@ -9,7 +9,7 @@ O diagrama de contexto fornece uma visão geral do sistema, mostrando como ele i
 ![contexto](https://github.com/rebeccajanuario/Biblioteca/assets/65727310/1fc797aa-c85a-4832-b1e4-9529df248000)
 
 # Diagrama de Container
-O diagrama de containers detalha os principais contêineres do sistema e suas interações. No sistema "MAM", ele mostra os serviços de backend, frontend, processamento de reservas, banco de dados e monitoramento de métricas, além de como esses componentes interagem entre si e com os usuários.
+O diagrama de contêineres detalha os principais contêineres do sistema e suas interações. No sistema "MAM", ele mostra os serviços de backend, frontend, processamento de reservas, banco de dados e monitoramento de métricas, além de como esses componentes interagem entre si e com os usuários.
 
 ![container](https://github.com/rebeccajanuario/Biblioteca/assets/65727310/0f36dcd7-6e3a-461d-98a4-1ca3be206ccf)
 

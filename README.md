@@ -2,15 +2,23 @@
 
 # C4Model
 # Diagrama de Contexto
+O diagrama de contexto fornece uma visão geral do sistema, mostrando como ele interage com os diferentes atores externos. Para o sistema "MAM" de venda de ingressos e reserva da biblioteca do Museu de Arte Moderna de São Paulo, o diagrama de contexto identifica os principais usuários e as interações deles com o sistema.
+
 ![contexto](https://github.com/rebeccajanuario/Biblioteca/assets/65727310/1fc797aa-c85a-4832-b1e4-9529df248000)
 
 # Diagrama de Container
+O diagrama de containers detalha os principais contêineres do sistema e suas interações. No sistema "MAM", ele mostra os serviços de backend, frontend, processamento de reservas, banco de dados e monitoramento de métricas, além de como esses componentes interagem entre si e com os usuários.
+
 ![container](https://github.com/rebeccajanuario/Biblioteca/assets/65727310/0f36dcd7-6e3a-461d-98a4-1ca3be206ccf)
 
 # Diagrama de Componentes
+O diagrama de componentes detalha os componentes dentro dos principais contêineres do sistema. No sistema "MAM", ele mostra os controladores, serviços e outros componentes do backend, bem como suas interações internas.
+
 ![componentes](https://github.com/rebeccajanuario/Biblioteca/assets/65727310/18c67490-ab02-4ed2-8ddf-cf666fd58889)
 
 # Diagrama de Código
+O diagrama de código fornece uma visão detalhada das classes e suas interações dentro dos componentes do sistema. No caso do backend do sistema "MAM", ele mostra as classes e métodos principais envolvidos na lógica de reservas de ingressos e livros.
+
 ![codigo](https://github.com/rebeccajanuario/Biblioteca/assets/65727310/c3d5bbbd-ed19-4fb1-9a78-be1e265f903e)
 
 

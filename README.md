@@ -19,8 +19,6 @@ O diagrama de componentes detalha os componentes dentro dos principais contêine
 ![componentes](https://github.com/rebeccajanuario/Biblioteca/assets/65727310/18c67490-ab02-4ed2-8ddf-cf666fd58889)
 
 # Diagrama de Código
-O diagrama de código fornece uma visão detalhada das classes e suas interações dentro dos componentes do sistema. No caso do backend do sistema "MAM", ele mostra as classes e métodos principais envolvidos na lógica de reservas de ingressos e livros.
 
-![codigo](https://github.com/rebeccajanuario/Biblioteca/assets/65727310/c3d5bbbd-ed19-4fb1-9a78-be1e265f903e)
 
 

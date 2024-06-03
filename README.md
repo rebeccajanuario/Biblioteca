@@ -1,4 +1,4 @@
-# Software para controlar a venda de ingressos dovenda de ingressos do MAM(Museu de Arte Moderna de São Paulo) e a reserva de sua biblioteca.
+# Software para controlar a venda de ingressos do MAM(Museu de Arte Moderna de São Paulo) e a reserva de sua biblioteca.
 
 # C4Model
 # Diagrama de Contexto

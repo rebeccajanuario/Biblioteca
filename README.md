@@ -17,7 +17,8 @@ O diagrama de contêineres detalha os principais contêineres do sistema e suas 
 # Diagrama de Componentes
 O diagrama de componentes detalha os componentes dentro dos principais contêineres do sistema. No sistema "MAM", ele mostra os controladores, serviços e outros componentes do backend, bem como suas interações internas.
 
-![componentes](https://github.com/rebeccajanuario/Biblioteca/assets/65727310/18c67490-ab02-4ed2-8ddf-cf666fd58889)
+![fLJ1JXiz4Bxp5FwZ_m0IoLOj9wHAG5fLLA6bH9oZMNkI6BoUPUnD1LMVfWUUe4_0YzNEPjDbPHRQvX3Pwvdl-sRciu-S1_PLONR-qrQQIg5OUb-wmonZ-3fQQB-iyieXIx8UhHz9AhBIW8qvG-ULqNasFXYUnq-NPvEi0EUHmwVPc8gIRCmfr_WAvzgYE1r__dHvCNa1ZQzAKFpcDvqEfyDvY1YwahL7bwrUZmv6hxRQApODVgPm5UDTnW](https://github.com/rebeccajanuario/Biblioteca/assets/65727310/75c98f5a-0b25-461b-8c26-8accefd655b2)
+
 
 # Diagrama de Código
 

@@ -1,0 +1,14 @@
+@startuml
+!include https://raw.githubusercontent.com/plantuml-stdlib/C4-PlantUML/master/C4_Context.puml
+
+Person(visitor, "Visitante", "Usuário que reserva ingressos e livros")
+Person(librarian, "Bibliotecário", "Gerencia as reservas e eventos")
+Person(admin, "Administrador do Sistema", "Acompanha as métricas do sistema")
+
+System(mam_system, "Sistema de Venda de Ingressos e Reserva da Biblioteca - MAM", "Gerencia reservas de ingressos e livros para o Museu de Arte Moderna de São Paulo")
+
+Rel(visitor, mam_system, "Solicita reservas de ingressos e livros")
+Rel(librarian, mam_system, "Gerencia reservas e eventos")
+Rel(admin, mam_system, "Monitora métricas do sistema")
+
+@enduml

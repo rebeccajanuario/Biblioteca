@@ -61,5 +61,17 @@ Processador de Reservas:
 
 # Diagrama de Código
 
+![Uploading XPD1RzGm48Nl-HLkJwrG4WISUa2bBOUY2b0hpcZMdjswE7OqCmuIgF-TXFN2QEjsVLhvlVdUvja-Pm6IF8JcoE7QHpJNbry-VxkzCVSY8v_rFS7FRkFbFgyo8zaK1QDqDWszv14SlUt70751j7vMs_NiQ7aaByZzzAPxrxrkZdoq8JlC57Rytk6q-Bb_W0dOaX_b-mhS1hjn-JlD2FO7RD0SNym_C3fpycastlqrdXwRtusPbmt0RAxZXf.png…]()
+
+
+Este diagrama de código representa a estrutura de classes do backend e do processador de reservas do Sistema de Venda de Ingressos e Reserva da Biblioteca - MAM.
+
+Interações:
+
+    O IngressoController e o LivroController usam o ServicoReserva para processar reservas.
+    O EventoController usa o ServicoAutenticacao para autenticação e autorização.
+    O ServicoReserva usa o ServicoBancoDeDados para salvar, obter e deletar reservas.
+    O ProcessadorReserva comunica os resultados das reservas ao ServicoReserva e usa o ServicoBancoDeDados.
+
 
 

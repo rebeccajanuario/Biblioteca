@@ -1,0 +1,31 @@
+@startuml
+!include https://raw.githubusercontent.com/plantuml-stdlib/C4-PlantUML/master/C4_Component.puml
+!define ICONURL https://raw.githubusercontent.com/tupadr3/plantuml-icon-font-sprites/v2.4.0
+!includeurl ICONURL/devicons/react.puml
+!includeurl ICONURL/devicons/javascript_badge.puml
+
+Container(backend, "Backend", "JavaScript", "Sistema que gerencia reservas de ingressos e livros", $sprite = "javascript_badge") {
+    Component(ingress_controller, "Controlador de Ingressos", "JavaScript", "Controla as solicitações de reservas de ingressos")
+    Component(book_controller, "Controlador de Livros", "JavaScript", "Controla as solicitações de reservas de livros")
+    Component(event_controller, "Controlador de Eventos", "JavaScript", "Gerencia os eventos")
+    Component(auth_service, "Serviço de Autenticação", "JavaScript", "Serviço de autenticação e autorização")
+    Component(reservation_service, "Serviço de Reservas", "JavaScript", "Processa reservas de ingressos e livros")
+    Component(db_service, "Serviço de Banco de Dados", "JavaScript", "Interage com o banco de dados")
+    
+    Rel(visitor, ingress_controller, "Solicita reservas de ingressos")
+    Rel(visitor, book_controller, "Solicita reservas de livros")
+    Rel(librarian, event_controller, "Gerencia eventos")
+    Rel(auth_service, visitor, "Autentica e autoriza")
+    Rel(reservation_service, ingress_controller, "Processa reservas de ingressos")
+    Rel(reservation_service, book_controller, "Processa reservas de livros")
+    Rel(reservation_service, db_service, "Armazena informações de reservas")
+    Rel(db_service, mysql_processor, "Interage com o banco de dados", "MySQL Protocol")
+}
+
+Container(processor, "Processador de Reservas", "JavaScript", "Processa as reservas: confirmando ou rejeitando", $sprite = "javascript_badge") {
+    Component(reservation_processor, "Processador de Reservas", "JavaScript", "Confirma ou rejeita reservas de ingressos e livros")
+    Rel(reservation_processor, reservation_service, "Comunica resultado das reservas")
+    Rel(reservation_processor, db_service, "Armazena detalhes das reservas", "MySQL Protocol")
+}
+
+@enduml

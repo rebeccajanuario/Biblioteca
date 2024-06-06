@@ -109,7 +109,7 @@ Fluxo de Criação de Controladores:
    ServicoReserva e ServicoBancoDeDados são usados pelas estratégias para interagir com o sistema de reservas e o banco de dados.
 
  
-![sheep-thumbsup](https://github.com/rebeccajanuario/ConectMAM/assets/65727310/5c373a4f-fb74-475e-b459-fdf897b289f4)
+
 
 
 

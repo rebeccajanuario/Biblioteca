@@ -4,7 +4,7 @@
 # Participantes
 Brenda Marques CP3020665
 
-Rebecca Januário CP3020622
+@rebeccajanuario CP3020622
 
 # Software para controlar a venda de ingressos do MAM(Museu de Arte Moderna de São Paulo) e a reserva de sua biblioteca.
 O MAM enfrenta desafios na gestão da venda de ingressos e da reserva de livros da biblioteca, que atualmente são processos manuais e propensos a erros. Isso resulta em filas, indisponibilidade de materiais e dificuldade na obtenção de dados precisos para análises estratégicas. O software proposto integrará em um único sistema a venda de ingressos online, a reserva de livros e a gestão de dados, oferecendo aos visitantes uma plataforma intuitiva e eficiente para interagir com o museu.

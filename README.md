@@ -76,11 +76,11 @@ Interações:
     
 # Diagrama de Classes com Factory
 O uso do padrão Factory desacopla a criação de controladores do código que os usa, facilitando a manutenção e a escalabilidade do sistema.
-![](https://github.com/rebeccajanuario/Biblioteca/blob/04347fc510c67f09b0f70e5256a4a287270d861c/Diagramas/diagramaFactory.puml)
+![](https://github.com/rebeccajanuario/Biblioteca/blob/a8b4e818b0b94f30cbc2212cb2766bad89c58c72/Diagramas/diagramaFactory.puml)
 
 # Diagrama de Classes com Strategy
 O uso do padrão Strategy permite que a lógica de reserva de ingressos e livros seja encapsulada em classes distintas, facilitando a manutenção e a extensão do sistema.
-![](https://github.com/rebeccajanuario/Biblioteca/blob/04347fc510c67f09b0f70e5256a4a287270d861c/Diagramas/diagramaStrategy.puml)
+![](https://github.com/rebeccajanuario/Biblioteca/blob/a8b4e818b0b94f30cbc2212cb2766bad89c58c72/Diagramas/diagramaStrategy.puml)
 
  
 

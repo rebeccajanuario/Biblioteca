@@ -73,6 +73,14 @@ Interações:
     O EventoController usa o ServicoAutenticacao para autenticação e autorização.
     O ServicoReserva usa o ServicoBancoDeDados para salvar, obter e deletar reservas.
     O ProcessadorReserva comunica os resultados das reservas ao ServicoReserva e usa o ServicoBancoDeDados.
+    
+# Diagrama de Classes com Factory
+O uso do padrão Factory desacopla a criação de controladores do código que os usa, facilitando a manutenção e a escalabilidade do sistema.
+
+# Diagrama de Classes com Strategy
+O uso do padrão Strategy permite que a lógica de reserva de ingressos e livros seja encapsulada em classes distintas, facilitando a manutenção e a extensão do sistema.
+
+ 
 
 
 

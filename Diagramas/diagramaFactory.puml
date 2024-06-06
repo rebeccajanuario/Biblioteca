@@ -3,33 +3,31 @@
 !includeurl ICONURL/devicons/javascript_badge.puml
 
 package "Backend (JavaScript)" {
-    class IngressoController {
-        -strategy : IReservaStrategy
-        +IngressController(strategy: IReservaStrategy)
+    class IControllerFactory {
+        +createIngressoController() : IngressoController
+        +createLivroController() : LivroController
+        +createEventoController() : EventoController
+    }
+
+    class ConcreteControllerFactory {
+        +createIngressoController() : IngressoController
+        +createLivroController() : LivroController
+        +createEventoController() : EventoController
+    }
+
+    interface IController {
         +reservar()
         +cancelar()
     }
 
-    class LivroController {
-        -strategy : IReservaStrategy
-        +LivroController(strategy: IReservaStrategy)
-        +reservar()
-        +cancelar()
+    class IngressoController implements IController {
+        +reservarIngresso()
+        +cancelarIngresso()
     }
 
-    interface IReservaStrategy {
-        +processarReserva()
-        +cancelarReserva()
-    }
-
-    class ReservaIngressoStrategy {
-        +processarReserva()
-        +cancelarReserva()
-    }
-
-    class ReservaLivroStrategy {
-        +processarReserva()
-        +cancelarReserva()
+    class LivroController implements IController {
+        +reservarLivro()
+        +cancelarLivro()
     }
 
     class EventoController {
@@ -38,11 +36,13 @@ package "Backend (JavaScript)" {
         +deletarEvento()
     }
 
-    IngressoController --> IReservaStrategy : usa
-    LivroController --> IReservaStrategy : usa
+    ConcreteControllerFactory -up-|> IControllerFactory
+    ConcreteControllerFactory --> IngressoController
+    ConcreteControllerFactory --> LivroController
+    ConcreteControllerFactory --> EventoController
 
-    ReservaIngressoStrategy --> ServicoReserva : usa
-    ReservaLivroStrategy --> ServicoReserva : usa
+    IngressoController --> ServicoReserva : usa
+    LivroController --> ServicoReserva : usa
     EventoController --> ServicoAutenticacao : usa
 }
 

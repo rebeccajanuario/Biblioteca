@@ -1,7 +1,7 @@
 # 🎫 ConectMAM 🎫
 ![Brimston](https://github.com/rebeccajanuario/Biblioteca/assets/129446615/3187f19a-6598-4688-84d2-ae7aa7af4729)
 
-#👥 Participantes
+# 👥 Participantes
 Brenda Marques CP3020665
 
 Rebecca Januario CP3020622

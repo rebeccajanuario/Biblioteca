@@ -6,12 +6,12 @@ Brenda Marques CP3020665
 
 Rebecca Januario CP3020622
 
-# Software para controlar a venda de ingressos do MAM(Museu de Arte Moderna de São Paulo) e a reserva de sua biblioteca. 🎨
+# 🎨 Software para controlar a venda de ingressos do MAM(Museu de Arte Moderna de São Paulo) e a reserva de sua biblioteca🎨
 O MAM enfrenta desafios na gestão da venda de ingressos e da reserva de livros da biblioteca, que atualmente são processos manuais e propensos a erros. Isso resulta em filas, indisponibilidade de materiais e dificuldade na obtenção de dados precisos para análises estratégicas. O software proposto integrará em um único sistema a venda de ingressos online, a reserva de livros e a gestão de dados, oferecendo aos visitantes uma plataforma intuitiva e eficiente para interagir com o museu.
 
 
-# C4Model
-# Diagrama de Contexto
+# 🔖 C4Model
+# 🔸Diagrama de Contexto
 
 ![contexto](https://github.com/rebeccajanuario/Biblioteca/assets/65727310/1fc797aa-c85a-4832-b1e4-9529df248000)
 
@@ -32,7 +32,7 @@ Principais Interações:
     O visitante solicita reservas de ingressos e livros através do sistema.
     O bibliotecário gerencia reservas de ingressos e eventos através do sistema.
     O administrador do sistema monitora métricas de desempenho do sistema.
-# Diagrama de Container
+# 🔸Diagrama de Container
 
 ![fPNDRXit4CVlUWfsqOC4MDgYpIb0WTYEqJYLOsLNJdiJPfSZYGcNt93SJTMY3zDJaNFH9z2BbKD9D655heiQXiqFyZSVy-Vi2-l0kAwHWw-4gcN7aQsTQ-tpF3VmQR8IRjrLdKLJQ-LGkKcjcxoLeEZEs3ekHPLVFXlFQEdkPfetO1qQlxIuz3T0A3IJDl0vBlsCNL_UlhahfaymuxeMkFdktfpmk-EbFp6shH4ERTv_Etas-IRwtXbvuE](https://github.com/rebeccajanuario/Biblioteca/assets/65727310/a3af71fc-7e75-4d89-a839-8bedfb72907b)
 
@@ -46,7 +46,7 @@ Neste diagrama, o backend e o processador de reservas são implementados em Java
 
 
 
-# Diagrama de Componentes
+# 🔸Diagrama de Componentes
 O diagrama de componentes detalha os componentes dentro dos principais contêineres do sistema. No sistema "MAM", ele mostra os controladores, serviços e outros componentes do backend, bem como suas interações internas.
 
 ![image](https://github.com/rebeccajanuario/ConectMAM/assets/129446615/654bb105-40b3-4609-9df6-fd21b87b0957)
@@ -67,7 +67,7 @@ Processador de Reservas:
     Processador de Reservas: Confirma ou rejeita reservas de ingressos e livros, comunicando os resultados e armazenando os detalhes das reservas no banco de dados MySQL.
 
 
-# Diagrama de Código
+# 🔸Diagrama de Código
 
 ![XPD1RzGm48Nl-HLkJwrG4WISUa2bBOUY2b0hpcZMdjswE7OqCmuIgF-TXFN2QEjsVLhvlVdUvja-Pm6IF8JcoE7QHpJNbry-VxkzCVSY8v_rFS7FRkFbFgyo8zaK1QDqDWszv14SlUt70751j7vMs_NiQ7aaByZzzAPxrxrkZdoq8JlC57Rytk6q-Bb_W0dOaX_b-mhS1hjn-JlD2FO7RD0SNym_C3fpycastlqrdXwRtusPbmt0RAxZXf](https://github.com/rebeccajanuario/Biblioteca/assets/65727310/96698338-6d8e-4761-a557-647aaee378af)
 
@@ -82,13 +82,13 @@ Interações:
     O ServicoReserva usa o ServicoBancoDeDados para salvar, obter e deletar reservas.
     O ProcessadorReserva comunica os resultados das reservas ao ServicoReserva e usa o ServicoBancoDeDados.
     
-# Diagrama de Classes com Factory
+# 🔸Diagrama de Classes com Factory
 O uso do padrão Factory desacopla a criação de controladores do código que os usa, facilitando a manutenção e a escalabilidade do sistema.
 ![image](https://github.com/rebeccajanuario/ConectMAM/assets/129446615/41d74cec-ffa1-48a8-a92e-dc71a9040777)
 
 
 
-# Diagrama de Classes com Strategy
+# 🔸Diagrama de Classes com Strategy
 O uso do padrão Strategy permite que a lógica de reserva de ingressos e livros seja encapsulada em classes distintas, facilitando a manutenção e a extensão do sistema.
 ![image](https://github.com/rebeccajanuario/ConectMAM/assets/129446615/7bc8e36f-eb62-4a11-beac-3c22b95bdffc)
 

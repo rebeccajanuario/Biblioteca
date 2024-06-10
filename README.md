@@ -84,31 +84,14 @@ Interações:
     
 # Diagrama de Classes com Factory
 O uso do padrão Factory desacopla a criação de controladores do código que os usa, facilitando a manutenção e a escalabilidade do sistema.
-![0](https://github.com/rebeccajanuario/Biblioteca/assets/129446615/7406447f-9c94-482a-840e-4d1c48a31492)
 
-Fluxo de Criação de Controladores:
 
-   O ConcreteControllerFactory implementa a interface IControllerFactory, fornecendo métodos para criar controladores específicos (IngressoController, LivroController, EventoController).
-
-   Os controladores criados (IngressoController e LivroController) usam o ServicoReserva para processar as reservas.
-
-   O EventoController usa o ServicoAutenticacao para autenticar e autorizar ações de gerenciamento de eventos.
 
 # Diagrama de Classes com Strategy
 O uso do padrão Strategy permite que a lógica de reserva de ingressos e livros seja encapsulada em classes distintas, facilitando a manutenção e a extensão do sistema.
-![0](https://github.com/rebeccajanuario/Biblioteca/assets/129446615/fd828c75-c898-4d4f-b2dc-9fab08ac1ce9)
 
-Fluxo de Criação de Controladores:
 
-   IngressController e LivroController são configurados com uma instância da estratégia apropriada (ReservaIngressoStrategy ou ReservaLivroStrategy).
 
-   IReservaStrategy define a interface para as estratégias de reserva, garantindo que todas as estratégias implementem os métodos +processarReserva() e +cancelarReserva().
-
-   ReservaIngressoStrategy e ReservaLivroStrategy encapsulam a lógica específica de processamento e cancelamento de reservas de ingressos e livros, respectivamente.
-
-   ServicoReserva e ServicoBancoDeDados são usados pelas estratégias para interagir com o sistema de reservas e o banco de dados.
-
- 
 
 
 

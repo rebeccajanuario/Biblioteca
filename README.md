@@ -49,7 +49,7 @@ Neste diagrama, o backend e o processador de reservas são implementados em Java
 # Diagrama de Componentes
 O diagrama de componentes detalha os componentes dentro dos principais contêineres do sistema. No sistema "MAM", ele mostra os controladores, serviços e outros componentes do backend, bem como suas interações internas.
 
-![fLJ1JXiz4Bxp5FwZ_m0IoLOj9wHAG5fLLA6bH9oZMNkI6BoUPUnD1LMVfWUUe4_0YzNEPjDbPHRQvX3Pwvdl-sRciu-S1_PLONR-qrQQIg5OUb-wmonZ-3fQQB-iyieXIx8UhHz9AhBIW8qvG-ULqNasFXYUnq-NPvEi0EUHmwVPc8gIRCmfr_WAvzgYE1r__dHvCNa1ZQzAKFpcDvqEfyDvY1YwahL7bwrUZmv6hxRQApODVgPm5UDTnW](https://github.com/rebeccajanuario/Biblioteca/assets/65727310/75c98f5a-0b25-461b-8c26-8accefd655b2)
+![image](https://github.com/rebeccajanuario/ConectMAM/assets/129446615/654bb105-40b3-4609-9df6-fd21b87b0957)
 
 Descrição dos Componentes:
 

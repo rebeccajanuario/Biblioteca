@@ -11,22 +11,22 @@ Container(backend, "Backend", "JavaScript", "Sistema que gerencia reservas de in
     Component(auth_service, "Serviço de Autenticação", "JavaScript", "Serviço de autenticação e autorização")
     Component(reservation_service, "Serviço de Reservas", "JavaScript", "Processa reservas de ingressos e livros")
     Component(db_service, "Serviço de Banco de Dados", "JavaScript", "Interage com o banco de dados")
-    
-    Rel(visitor, ingress_controller, "Solicita reservas de ingressos")
-    Rel(visitor, book_controller, "Solicita reservas de livros")
-    Rel(librarian, event_controller, "Gerencia eventos")
-    Rel(auth_service, visitor, "Autentica e autoriza")
-    Rel(reservation_service, ingress_controller, "Processa reservas de ingressos")
-    Rel(reservation_service, book_controller, "Processa reservas de livros")
-    Rel(reservation_service, db_service, "Armazena informações de reservas")
 }
 
 Container(processor, "Processador de Reservas", "JavaScript", "Processa as reservas: confirmando ou rejeitando", $sprite = "javascript_badge") {
     Component(reservation_processor, "Processador de Reservas", "JavaScript", "Confirma ou rejeita reservas de ingressos e livros")
-    Rel(reservation_processor, reservation_service, "Comunica resultado das reservas")
 }
 
 Component(db, "Banco de Dados", "MySQL", "Banco de dados que armazena informações de reservas")
+
+Rel(visitor, ingress_controller, "Solicita reservas de ingressos")
+Rel(visitor, book_controller, "Solicita reservas de livros")
+Rel(librarian, event_controller, "Gerencia eventos")
+Rel(auth_service, visitor, "Autentica e autoriza")
+Rel(reservation_service, ingress_controller, "Processa reservas de ingressos")
+Rel(reservation_service, book_controller, "Processa reservas de livros")
+Rel(reservation_service, db_service, "Armazena informações de reservas")
+Rel(reservation_processor, reservation_service, "Comunica resultado das reservas")
 Rel(db_service, db, "Interage com o banco de dados", "MySQL Protocol")
 Rel(reservation_processor, db, "Armazena detalhes das reservas", "MySQL Protocol")
 

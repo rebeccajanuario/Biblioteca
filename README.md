@@ -97,6 +97,19 @@ O uso do padrão Strategy permite que a lógica de reserva de ingressos e livros
 
 
 # 🎟 Padrão Arquitetural MVC
+![image](https://github.com/rebeccajanuario/ConectMAM/assets/129446615/bfdb2f98-ca50-4130-9d7e-49643cb6af3d)
+
+Fluxo de Interação:
+
+*O Usuário interage com a Visão, realizando ações como: preencher formulários ou clicar em botões.
+
+*A Visão captura essas ações e, quando necessário, faz atualizações no Modelo (por exemplo, quando um formulário é submetido).
+
+*A Visão também pode acessar dados do Modelo para exibir informações ao usuário (por exemplo, mostrar a disponibilidade de ingressos ou livros).
+
+*O Controlador recebe as ações do Usuário através da Visão e executa a lógica necessária para manipular o Modelo (por exemplo, validar uma reserva ou processar um pagamento).
+
+*Qualquer mudança no Modelo pode ser refletida de volta na Visão para manter o usuário atualizado com as últimas informações.
 
 
 

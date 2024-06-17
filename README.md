@@ -84,7 +84,8 @@ Interações:
     
 # 🔸Diagrama de Classes com Factory
 O uso do padrão Factory desacopla a criação de controladores do código que os usa, facilitando a manutenção e a escalabilidade do sistema.
-![image](https://github.com/rebeccajanuario/ConectMAM/assets/129446615/41d74cec-ffa1-48a8-a92e-dc71a9040777)
+![image](https://github.com/rebeccajanuario/ConectMAM/assets/129446615/1de4d184-a550-49da-81b2-415e3e205949)
+
 
 
 

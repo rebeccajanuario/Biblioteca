@@ -93,7 +93,7 @@ O uso do padrão Factory desacopla a criação de controladores do código que o
 
 # 🔸Diagrama de Classes com Strategy
 O uso do padrão Strategy permite que a lógica de reserva de ingressos e livros seja encapsulada em classes distintas, facilitando a manutenção e a extensão do sistema.
-![image](https://github.com/rebeccajanuario/ConectMAM/assets/129446615/9c9f41fa-c5cf-4c84-853c-6ea4006ee4ff)
+![image](https://github.com/rebeccajanuario/ConectMAM/assets/129446615/e3b750fe-6009-409b-81c0-34702817bb64)
 
 
 # 🎟 Padrão Arquitetural MVC

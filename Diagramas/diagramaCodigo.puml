@@ -3,42 +3,75 @@
 !includeurl ICONURL/devicons/javascript_badge.puml
 
 package "Backend (JavaScript)" {
-    class IngressoController {
-        +reservarIngresso()
-        +cancelarIngresso()
+    
+    package "Controllers" {
+        class IngressoController {
+            +solicitarReservaIngresso()
+            +cancelarReservaIngresso()
+        }
+
+        class LivroController {
+            +solicitarReservaLivro()
+            +cancelarReservaLivro()
+        }
+
+        class EventoController {
+            +criarEvento()
+            +atualizarEvento()
+            +deletarEvento()
+        }
     }
 
-    class LivroController {
-        +reservarLivro()
-        +cancelarLivro()
+    package "Services" {
+        class ServicoAutenticacao {
+            +autenticar()
+            +autorizar()
+        }
+
+        class ServicoReservaIngresso {
+            +processarReserva()
+        }
+
+        class ServicoReservaLivro {
+            +processarReserva()
+        }
+
+        class ServicoBancoDeDados {
+            +salvarReserva()
+            +obterReserva()
+            +deletarReserva()
+        }
     }
 
-    class EventoController {
-        +criarEvento()
-        +atualizarEvento()
-        +deletarEvento()
+    package "Models" {
+        class Ingresso {
+            -id: int
+            -evento: string
+            -data: Date
+            -reservado: boolean
+        }
+
+        class Livro {
+            -id: int
+            -titulo: string
+            -autor: string
+            -reservado: boolean
+        }
+
+        class Evento {
+            -id: int
+            -nome: string
+            -data: Date
+            -local: string
+        }
     }
 
-    class ServicoAutenticacao {
-        +autenticar()
-        +autorizar()
-    }
-
-    class ServicoReserva {
-        +processarReservaIngresso()
-        +processarReservaLivro()
-    }
-
-    class ServicoBancoDeDados {
-        +salvarReserva()
-        +obterReserva()
-        +deletarReserva()
-    }
-
-    IngressoController --> ServicoReserva : usa
-    LivroController --> ServicoReserva : usa
-    EventoController --> ServicoAutenticacao : usa
-    ServicoReserva --> ServicoBancoDeDados : usa
+    Controllers.IngressoController --> Services.ServicoReservaIngresso : usa
+    Controllers.LivroController --> Services.ServicoReservaLivro : usa
+    Controllers.EventoController --> Services.ServicoAutenticacao : usa
+    Services.ServicoReservaIngresso --> Services.ServicoBancoDeDados : usa
+    Services.ServicoReservaLivro --> Services.ServicoBancoDeDados : usa
+    Services.ServicoAutenticacao --> Services.ServicoBancoDeDados : usa
 }
 
 package "Processador de Reservas (JavaScript)" {
@@ -47,7 +80,9 @@ package "Processador de Reservas (JavaScript)" {
         +rejeitarReserva()
     }
 
-    ProcessadorReserva --> ServicoReserva : comunica resultado da reserva
-    ProcessadorReserva --> ServicoBancoDeDados : usa
+    ProcessadorReserva --> Services.ServicoReservaIngresso : comunica resultado
+    ProcessadorReserva --> Services.ServicoReservaLivro : comunica resultado
+    ProcessadorReserva --> Services.ServicoBancoDeDados : usa
 }
+
 @enduml
